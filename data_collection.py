@@ -109,5 +109,4 @@ def fetch_game_data(team_abbreviation, season):
             games.append([date, opponent, result, score, points_scored, points_allowed, home])
 
     df = pd.DataFrame(games, columns=['Date', 'Opponent', 'Result', 'Score', 'PointsScored', 'PointsAllowed', 'Home'])
-    print(df)  # Add this line to check the fetched data
     return df
