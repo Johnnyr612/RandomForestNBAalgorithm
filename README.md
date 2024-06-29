@@ -1,22 +1,31 @@
-# Sports Predictive Analytics Project
-This project aims to enhance predictive analytics in sports using the Random Forest algorithm. By training a model on comprehensive game statistics, we can forecast game outcomes and improve strategic decision-making for team composition and game strategies.
+# NBA Analitics Project
 
-Project Components
-Data Collection:
-Fetching historical game data, team rosters, and team statistics from ESPN.
+## Overview
+This project aims to collect and analyze NBA game data for predictive analytics using the Random Forest algorithm. The tool fetches game data, preprocesses it, and then trains a machine learning model to predict the outcomes of games. The project includes commands to fetch teams, rosters, and game data for analysis.
 
-Data Preprocessing:
-Converting raw game data into a structured format suitable for analysis.
+## Features
+- Fetch NBA team data
+- Fetch rosters for NBA teams
+- Fetch game data for a selected team and multiple seasons
+- Preprocess and display the data
+- Train a Random Forest model for game outcome prediction
+- Display model accuracy and performance metrics
 
-Feature Engineering:
-Creating relevant features from the game data.
+## Installation
+1. Install Python (version 3 or higher) on your system.
+2. Install the required Python packages by running the following command:
 
-Model Training with Random Forest:
-Using the Random Forest algorithm to train a model on the preprocessed game data.
-Evaluating the model using accuracy, precision, recall, and F1-score metrics.
-Analyzing feature importance to understand key factors influencing game outcomes.
+    ```bash
+    pip install requests pandas scikit-learn beautifulsoup4
+    ```
 
-Command-Line Interface:
-Fetching teams, rosters, and game data.
-Displaying predictions and model performance metrics.
+## Commands and Usage
 
+### Fetch Teams
+To fetch and display a list of NBA teams, run the following command:
+
+```bash
+python3 run.py getTeams
+```
+
+working progress...
